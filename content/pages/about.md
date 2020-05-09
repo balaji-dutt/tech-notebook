@@ -14,3 +14,5 @@ As of May 2020, I'm getting started on learning a whole new set of software tool
 
 ## How {#how}
 The site is built with [Hugo](https://gohugo.io) and hosted on [Netlify](https://www.netlify.com)
+
+Site logo Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
