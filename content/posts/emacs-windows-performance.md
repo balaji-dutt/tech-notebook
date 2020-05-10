@@ -1,7 +1,7 @@
 ---
 title: "Improving Emacs startup performance in Windows"
 date: 2020-05-10T16:55:29+08:00
-draft: true
+draft: false
 ---
 
 Much like everything else to do with Emacs, getting it to run "snappily" [^1] is a bit of a black art especially Windows. Here's a quick list of everything that I did to get Emacs to start-up quickly.
