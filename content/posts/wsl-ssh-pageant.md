@@ -12,7 +12,7 @@ Enter [wsl-ssh-pageant](https://github.com/benpye/wsl-ssh-pageant). This tool al
 
 - Download the binary from the [releases page](https://github.com/benpye/wsl-ssh-pageant/releases). Unzip and add it to a folder in your ```%PATH%``` somewhere.
 - Create an Windows Environment variable ```SSH_AUTH_SOCK``` and set the value as ```\\.\pipe\ssh-pageant```
-- Create a folder ```.wsl-ssh-pageant``` in your ```%USERPROFILE``` directory
+- Create a folder ```.wsl-ssh-pageant``` in your ```%USERPROFILE%``` directory
 - Add the following line to your ```.bashrc``` in your ```%USERPROFILE``` directory as well as your ```$HOME``` folder in WSL1:
 
     ```export SSH_AUTH_SOCK=/mnt/c/Users/USERNAME/.wsl-ssh-pageant/ssh-agent.sock```
