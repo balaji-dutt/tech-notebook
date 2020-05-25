@@ -7,8 +7,8 @@ draft: false
 Since Emacs is born in GNU-land, like all other Unix(y) tools it relies on other programs to do specific things. This includes some basic capabilities such as spell-checking, but the same applies for other integrations as well. All of this is of course much less straightforward when it comes to working in Windows.
 
 * Install hunspell using chocolatey[^1] ```choco install hunspell.portable```
-* Download the hunspell libaries from the [Libreoffice website](https://extensions.libreoffice.org/extensions/english-dictionaries/2019-11.01)
-    - The location of these libaries changes regularly so the above link can break. For reference, the files you need are the "English dictionaries for OpenOffice/LibreOffice**
+* Download the spelling dictionaries from the [Libreoffice website](https://extensions.libreoffice.org/extensions/english-dictionaries/2019-11.01)
+    - The location of these dictionary files changes regularly so the above link can break. For reference, the files you need are the "English dictionaries for OpenOffice/LibreOffice"
     - The file might come in ```.oxt``` format, but it's really just a zip file. Change the file extension to ".zip" and you can extract the contents.
 * Place the contents of the dictionary files in ```%ChocolateyInstall%\lib\hunspell.portable\tools\dict``` You might need to create the "tools\dict" folders the first time.
 * Create a new ```DICPATH``` environment variable pointing to the above location.
