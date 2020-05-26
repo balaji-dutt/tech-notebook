@@ -1,7 +1,7 @@
 ---
 title: "Using TRAMP-mode in Emacs on Windows 10"
 date: 2020-05-26T14:09:56+08:00
-draft: true
+draft: false
 ---
 TRAMP is another one of those Emacs power tools that once you have it working you go "How did I live without this till now?" [^1].
 

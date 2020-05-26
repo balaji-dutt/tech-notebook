@@ -1,7 +1,7 @@
 ---
 title: "Custom WinSCP ini files in Keypirinha"
 date: 2020-05-26T15:14:27+08:00
-draft: true
+draft: false
 ---
 
 [Keypirinha](https://github.com/Keypirinha/Keypirinha/) is an awesome new keystroke launcher for Windows. Much better than Launchy or Keybreeze which I've used before. [^1]

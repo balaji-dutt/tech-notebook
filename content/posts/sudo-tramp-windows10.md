@@ -1,7 +1,7 @@
 ---
 title: "Editing files with sudo in TRAMP-mode on Windows 10"
 date: 2020-05-26T14:33:56+08:00
-draft: true
+draft: false
 ---
 If you want to edit files owned by other users (or root) in TRAMP, you should note the following:
 
