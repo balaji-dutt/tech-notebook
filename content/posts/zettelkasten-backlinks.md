@@ -10,13 +10,12 @@ One of the ongoing debates in the Zettelkasten community is around the question 
 
 ### Using Andy Matuschak's Note Link Janitor
 This is the easier option since it is available in the npm repositories but there are some caveats to using it with most Zettelkasten tools.
-* The tool only works with Markdown files.
 * To be able to use this tool from the command-line, make sure to add ```%USERPROFILE%\node_modules\.bin``` to your %PATH% variable.
 * The Zettel must start with a Level 1 Heading, i.e. it should start with ```# Title```.
 * The Zettel title must be the same as the filename without the trailing ".md" extension
 * The Link to a Zettel must be in the format ```[[Full Title as per Zettel Note]]```
 
-The specific title requirements are a problem since a lot of Zettel tools do not use this particular format. Thankfully the folks in the Zettelkasten forums have forked Andy Matuschak's tool to work well with Zettelkasten tool but again there are some steps to be followed to get the fork working
+The specific title requirements are a problem since a lot of Zettel tools do not use this particular format. Thankfully the folks in the Zettelkasten forums have forked Andy Matuschak's tool to work well with Zettelkasten tools but again there are some steps to be followed to get the fork working
 
 ### Using the Zettelkasten Fork of Note Link Janitor
 * Remove the Note Link Janitor package from Andy Matuschak if you have it installed
@@ -27,8 +26,8 @@ The specific title requirements are a problem since a lot of Zettel tools do not
     - On Windows you can create a Batch file which is ``` node  "X:\path\to\note-link-janitor\dist\index.js" %*``` and place the batch file in a folder that's in your %PATH%
 * You should now be able to run ```note-link-janitor.bat X:\Path\to\Zettlels\```
 * The forked version supports the following (which is the default for how most Zettelkasten tools work):
-    - Notes that start without a title
     - Links that use the syntax ```[[YYYYMMDDHHMM(SS)]]``` without the rest of the title
+    - Notes that start without a title
 
 #### Installing Node in Windows
 The tool (both original and fork) are node.js packages and hence require Node to be installed. On Windows, there is a default node.js installer available, but since that's the easy option I decided to use [nvm](https://github.com/coreybutler/nvm-windows) instead. nvm does have the benefit of allowing multiple node versions to co-exist on the same machine but I don't think it's quite as capable as a Python venv.
