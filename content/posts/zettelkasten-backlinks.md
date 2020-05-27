@@ -1,7 +1,7 @@
 ---
 title: "Automating Backlinks creation for Zettelkasten notes"
 date: 2020-05-27T15:41:29+08:00
-draft: true
+draft: false
 ---
 
 Somewhere in parallel with my Emacs explorations, I came across the concept of [Zettelkasten](https://zettelkasten.de/posts/overview/) and I was instantly hooked. Much like GTD, Zettelkasten is a technique that's "Easy to understand. Hard to apply" but my early experience with it has been very promising.
