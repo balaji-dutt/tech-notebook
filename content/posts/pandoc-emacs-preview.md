@@ -1,7 +1,7 @@
 ---
 title: "Preview Markdown files in Emacs with pandoc plus Live preview!"
 date: 2020-05-28T17:51:20+08:00
-draft: true
+draft: false
 ---
 The markdown-mode in Emacs does ship with a basic preview mode where it will show the Markdown content as HTML, but there are no CSS styles applied (naturally) and this makes it difficult to get a sense of how the page would render on GitHub. spacemacs ships with a extra function that renders the Markdown content in an Emacs window with GitHub formatting, but again this is without CSS styling. So let's use pandoc instead!
 

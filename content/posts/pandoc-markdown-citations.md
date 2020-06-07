@@ -1,7 +1,7 @@
 ---
 title: "Using Pandoc to expand citations (without Bibliographies) in Markdown"
 date: 2020-05-28T17:12:02+08:00
-draft: true
+draft: false
 ---
 
 Not very surprisingly I think, given the Zettelkasten technique originated from an academic background a number of practitioners are from the same background and thus there is quite a lot of emphasis on citing the proper sources etc. I caught that bug as well if only in that I wanted a more reliable way to track articles I would use in my Zettelkasten than just Pinboard bookmarks. That lead me to Zotero and from there it was a one short fateful step to learning about pandoc. Pandoc is rightly the "Swiss army knife of document manipulation", but so many times while I was desperately trying to bend it to my will I really really wished I had never made the decision to investigate pandoc.
@@ -22,7 +22,7 @@ Explanation of the options is below:
 * ```--filter pandoc-citeproc```: Where it all started. Makes Pandoc process any references in source file that use the Pandoc "[@]" reference syntax.
 * **The Biggie** ```--metadata=suppress-bibliography```: Additional metadata option (This option take precedence over metadata supplied through "--metadata-file" and metadata inside the source file) to prevent a bibliography section from being added at the end of each output file.
 * ```-t markdown_mmd+yaml_metadata_block```: Generates a Multimarkdown output file (which supports footnotes) while also ensuring that YAML metadata blocks in source files are retained in the output.
-* ```-o X:\path\to\content\posts\target.md```: Relative path to output "posts" directory. Output file name must be supplied by the calling script.
+* ```-o X:\path\to\content\posts\target.md```: Path to output directory. Output file name must be supplied by the calling script.
 * ```--bibliography="X:\path\to\Zotero\bibliography.bib"```: Path to Bibliography file generated from Zotero. I'm using the Better BibTex plugin in Zotero while outputting the bibliography file. Use quotes to fix any spaces in the Path.
 * ```--csl="X:\path\to\chicago-full.csl```: Path to Citation Style Langugage (CSL) file. I'm using the "Chicago Manual of Style 17th edition (full note)" citation style here.
 
