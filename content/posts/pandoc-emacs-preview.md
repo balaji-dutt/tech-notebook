@@ -60,9 +60,9 @@ This is a pretty nifty feature that uses stock Emacs capabilities, but I'll ment
 (add-hook 'markdown-mode-hook 'my-markdown-live-preview)
 )
 ```
-   - You can now go <http://localhost:7070>" in your browser and you will a see list of markdown files open in Emacs. Click on any file and get a live-updating preview in GitHub styling!
+   - You can now go <http://localhost:7070> in your browser and you will a see list of markdown files open in Emacs. Click on any file and get a live-updating preview in GitHub styling!
    - When you quit Emacs after opening a Markdown file, you will get a prompt that a network process is open. It's safe to press "y" on this prompt.
-* Bonus Bonus: In spacemacs, you can add a little tweak to make the live-preview get a nice icon in the modeline. Just add the following to your spacemacs init.el:
+* **Extra Bonus**: In spacemacs, you can add a little tweak to make the live-preview get a nice icon in the modeline. Just add the following to your spacemacs init.el:
    ```elisp
    (spacemacs|diminish impatient-mode " Ⓘ" " I")
    ```
