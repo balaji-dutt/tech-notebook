@@ -1,7 +1,7 @@
 ---
 title: "Fix Sultan Command Execution error in Windows"
 date: 2020-07-01T18:26:21+08:00
-draft: true
+draft: false
 ---
 
 I came across [Sultan](https://sultan.readthedocs.io/en/latest/) many months ago and had filed it away for future reference. Cue the work I've been doing on automating my Zettelkasten workflow in Python and in order to simplify calling out to an external program (no points for guessing that the program I'm calling is pandoc) I decided to use Sultan.
