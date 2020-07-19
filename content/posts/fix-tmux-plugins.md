@@ -4,7 +4,7 @@ date: 2020-07-11T15:50:02+08:00
 draft: false
 ---
 
-Continuing the theme of [upgrades breaking things]({{< relref "frustrating-linux-tools.md" >}}), I realized that after the reinstallation of [Proxmox]({{< "fix-bridge-interfaces-proxmox-6.md" >}}) I was not able to restore my tmux sessions. The mapped commands in my `.tmux.conf` for session-save, session-restore were not working but everything else was.
+Continuing the theme of [upgrades breaking things]({{< relref "frustrating-linux-tools.md" >}}), I realized that after the reinstallation of [Proxmox]({{< relref "fix-bridge-interfaces-proxmox-6.md" >}}) I was not able to restore my tmux sessions. The mapped commands in my `.tmux.conf` for session-save, session-restore were not working but everything else was.
 
 An initial check seemed to suggest it was PEBKAC error since I needed to clone the [tmux plugin manager](https://github.com/tmux-plugins/tpm) into my .tmux folder. However, even after doing that and trying to install the plugins via the plugin manager the session functionality was not working. I decided to check the GitHub issues in the tpm repo and in a completely unsurprising turn of events, there's [an open issue](https://github.com/tmux-plugins/tpm/issues/97) that since tmux 2.2 this has been broken. Anybody wanna take a bet that there was some barely announced deprecation of a tmux feature that's the root cause?
 
