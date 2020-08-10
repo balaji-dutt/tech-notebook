@@ -35,4 +35,4 @@ Instead after quite a bit of searching on GitHub, I came across [this gist](http
 (spacemacs/set-leader-keys-for-major-mode 'markdown-mode "ir" 'markdown-reftex-citation)
 ```
 
-You can add this function to your Emacs `init.el` after which you can invoke it by typing `Ctrl-C-[` or in spacemacs by typing `SPC-m-i-r` when in Markdown mode. Not that the first invocation of this function can glitch where it will insert a `LaTeX` style citation but it works fine when you invoke it a second time.
+You can add this function to your Emacs `init.el` after which you can invoke it by typing `Ctrl-C-[` or in spacemacs by typing `SPC-m-i-r` when in Markdown mode. Note that the first invocation of this function can glitch where it will insert a `LaTeX` style citation but it works fine when you invoke it a second time.
