@@ -1,0 +1,15 @@
+{
+    "default": true,
+    "MD001": false, /* Doc must start with heading */
+    // "MD007": false, /* Unordered list indentation */
+    "MD013": false, /* Line length 80 chars */
+    // "MD023": false, /* Headings must be at beginning of line*/
+    // "MD024": false, /* Multiple heading at same level in same document*/
+    // "MD025": false, /* Multiple H1 in same document*/
+    // "MD032": false, /* Blanks around lists */
+    // "MD034": false, /* No bare URLs */
+    // "MD040": false, /*Code blocks must have language */
+    // "MD041": false, /* First line in file must be top level heading */
+    "frontMatter": "(^---\\s*$[^]*?^---\\s*$)(\\r\\n|\\r|\\n|$)", /* Ignore frontmatter */
+    "no-hard-tabs": false
+}
