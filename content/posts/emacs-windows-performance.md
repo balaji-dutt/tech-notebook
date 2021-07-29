@@ -7,12 +7,11 @@ draft: false
 Much like everything else to do with Emacs, getting it to run "snappily" [^1] is a bit of a black art especially Windows. Here's a quick list of everything that I did to get Emacs to start-up quickly.
 
 * Pick the right flavour of Emacs
-    - The default Windows binary available on [the GNU website](https://www.gnu.org/software/emacs/download.html#windows) is not the most optimized version and lacks some quality of life features such as having GnuTLS built in, which is needed for getting MELPA packages.
-    - A good alternative is [emax64](https://github.com/m-parashar/emax64), which has a bunch of optimizations and libraries baked in. The only problem that I have with it is that it is only available as tarball releases which means you need to keep track of when a new version comes out.
-    - The other alternative is [msys2](https://www.msys2.org/) which has the benefit of coming with a package manager to handle updates. This is an optimized version as well but it's still missing some additional libraries which are needed to get the best experience with Emacs distributions like spacemacs. I wound up installing the following additional packages:
+  * The default Windows binary available on [the GNU website](https://www.gnu.org/software/emacs/download.html#windows) is not the most optimized version and lacks some quality of life features such as having GnuTLS built in, which is needed for getting MELPA packages.
+  * A good alternative is [emax64](https://github.com/m-parashar/emax64), which has a bunch of optimizations and libraries baked in. The only problem that I have with it is that it is only available as tarball releases which means you need to keep track of when a new version comes out.
+  * The other alternative is [msys2](https://www.msys2.org/) which has the benefit of coming with a package manager to handle updates. This is an optimized version as well but it's still missing some additional libraries which are needed to get the best experience with Emacs distributions like spacemacs. I wound up installing the following additional packages:
 
         ```pacman -S  mingw-w64-x86_64-giflib mingw-w64-x86_64-libjpeg-turbo mingw-w64-x86_64-libpng mingw-w64-x86_64-librsvg mingw-w64-x86_64-libtiff mingw-w64-x86_64-imagemagick mingw-w64-x86_64-libxml2```
-
 
 * Exclude Emacs folders and paths from Antivirus scans - I cannot *emphasize* how much of a difference this makes! Even Windows Defender which is considered the least offensive in terms of performance hits from an AV scanner added nearly 10 seconds to the startup time. And if you are using Acronis True Image for backups, disable the Ransomware Protection. Even excluding Emacs paths in the Acronis program is not enough, and leaving it on added nearly _90 seconds_ to Emacs startup times 😲.
 

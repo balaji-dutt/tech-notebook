@@ -8,7 +8,7 @@ If you are using Confluence, you might have come across an annoying behaviour wh
 
 Thankfully, there is a way to fix the search so that it only searches within a particular Confluence" "Space". This trick does require you to have at least Space Admin rights though. Navigate to Space tools > Look and Feel and then look for the tab "Sidebar,header and footer". If there is a `{livesearch}` macro listed in the sidebar, change it as follows:
 
-```
+```shell
 {livesearch:spacekey=MY_CONFLUENCE_SPACE|placeholder=Any placeholder text}
 ```
 

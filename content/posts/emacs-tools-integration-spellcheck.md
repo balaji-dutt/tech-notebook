@@ -8,11 +8,12 @@ Since Emacs is born in GNU-land, like all other Unix(y) tools it relies on other
 
 * Install hunspell using chocolatey[^1] ```choco install hunspell.portable```
 * Download the spelling dictionaries from the [Libreoffice website](https://extensions.libreoffice.org/extensions/english-dictionaries/2019-11.01)
-    - The location of these dictionary files changes regularly so the above link can break. For reference, the files you need are the "English dictionaries for OpenOffice/LibreOffice"
-    - The file might come in ```.oxt``` format, but it's really just a zip file. Change the file extension to ".zip" and you can extract the contents.
+  * The location of these dictionary files changes regularly so the above link can break. For reference, the files you need are the "English dictionaries for OpenOffice/LibreOffice"
+  * The file might come in ```.oxt``` format, but it's really just a zip file. Change the file extension to ".zip" and you can extract the contents.
 * Place the contents of the dictionary files in ```%ChocolateyInstall%\lib\hunspell.portable\tools\dict``` You might need to create the "tools\dict" folders the first time.
 * Create a new ```DICPATH``` environment variable pointing to the above location.
 * Add the following snippet to your Emacs init.el
+
 ```emacs
   (with-eval-after-load "ispell"
     (setq ispell-dictionary-alist
@@ -38,6 +39,7 @@ Since Emacs is born in GNU-land, like all other Unix(y) tools it relies on other
 
 * This configuration sets up the different English spelling variants, assigns "english" as the default dictionary language (mapped to en-GB) and skips source code snippets in orgmode files.
 * To enable spellcheck in a particular Emacs major-mode, you need to do the following:
+
 ```emacs
     ;; Replace org-mode-hook with the appropriate mode-hook that you are interested in.
     (add-hook 'org-mode-hook
