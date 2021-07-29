@@ -2,6 +2,7 @@ baseurl = "https://nb.balaji.blog"
 DefaultContentLanguage = "en"
 title = "Balaji's Tech Notes"
 theme = "beautifulhugo"
+contentDir = "content"
 languageCode = "en-us"
 paginate = "10"
 enableEmoji = true
@@ -79,14 +80,14 @@ pygmentsCodefencesGuessSyntax = true
 
 # Navbar
 [[menu.main]]
-	name = "Home"
-	url = "/"
-	weight = 1
+    name = "Home"
+    url = "/"
+    weight = 1
 
 [[menu.main]]
-	name = "About"
-	url = "pages/about/"
-	weight = 3
+    name = "About"
+    url = "pages/about/"
+    weight = 3
 
 # [[menu.main]]
 #     name = "Tags"
