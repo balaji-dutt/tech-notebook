@@ -13,3 +13,4 @@ $RECYCLE.BIN/
 
 # Auto-generated tag files
 tags
+.hugo_build.lock
