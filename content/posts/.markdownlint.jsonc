@@ -10,6 +10,8 @@
     // "MD034": false, /* No bare URLs */
     // "MD040": false, /*Code blocks must have language */
     // "MD041": false, /* First line in file must be top level heading */
-    "frontMatter": "(^---\\s*$[^]*?^---\\s*$)(\\r\\n|\\r|\\n|$)", /* Ignore frontmatter */
+    "options": {
+        "frontMatter": "(^---\\s*$[^]*?^---\\s*$)(\\r\\n|\\r|\\n|$)" /* Ignore frontmatter */
+    },
     "no-hard-tabs": false
 }
